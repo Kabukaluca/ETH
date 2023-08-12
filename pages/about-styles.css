@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Rubik Mono One', sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url(../img/crew1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    position: relative;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: "  ]";
+    position: absolute;
+    opacity: 0;
+    left: 100%;
+    transition: 0.2s ease;
+}
+
+.navbar ul li a::before {
+    content: "[  ";
+    position: absolute;
+    opacity: 0;
+    right: 100%;
+    transition: 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: rgb(189, 118, 184);
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover::before,
+.navbar ul li a:hover::after {
+    opacity: 1;
+}
+
+.navbar ul li img {
+    max-height: 15rem;
+    max-width: 15rem;
+    }
+
+.logo {
+    cursor: pointer;
+}
+
+
+.header {
+    margin-bottom: -15vh;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 5rem;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3rem;
+    text-shadow:0.2rem 0.2rem 0.1rem rgb(189, 118, 184);
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+.crew-img {
+    max-width: 400px;
+    float: left;
+    border: 3px solid rgb(189, 118, 184);
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.text-box {
+    color: white;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    &:nth-of-type(2) {
+        background-color: rgb(75, 22, 59);
+    }
+}
