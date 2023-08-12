@@ -17,13 +17,21 @@ body {
 }
 
 .navbar {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    );
 }
 .navbar ul {
     display: flex;
@@ -86,11 +94,11 @@ body {
 
 
 .header {
-    margin-bottom: -15vh;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 5rem;
+    flex-direction: column;
 }
 
 .header h1 {
@@ -118,22 +126,40 @@ body {
     width: 70%;
 }
 
-.crew-img {
+.crew-img-left {
     max-width: 400px;
     float: left;
-    border: 3px solid rgb(189, 118, 184);
+    border: 3px solid white;
     border-radius: 10px;
-    margin-right: 25px;
+    margin-right: 50px;
+}
+
+.crew-img-right {
+    max-width: 400px;
+    float: right;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 50px;
 }
 
 .text-box {
     color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
 }
 
 .main {
     height: 100%;
     width: 100%;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
@@ -145,7 +171,63 @@ section {
     height: 100vh;
     scroll-snap-align: start;
 
+    &:nth-of-type(1) {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0.75)
+      ), url(../img/crew1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     &:nth-of-type(2) {
-        background-color: rgb(75, 22, 59);
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.85)
+      ), url(../img/guitar-stage.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(3) {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.85)
+      ), url(../img/mic-stage.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(4) {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.85)
+      ), url(../img/lights-stage.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(5) {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.85)
+      ), url(../img/crowd-stage.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(6) {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.85)
+      ), url(../img/drums-stage.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
