@@ -8,8 +8,8 @@ body {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.35), 
-        rgba(0, 0, 0, 0.35)
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)
       ), url(../img/stage2.jpeg);
     background-size: cover;
     background-position: center;
@@ -84,11 +84,49 @@ body {
     cursor: pointer;
 }
 
-.h1 {
-    font-size: 36px;
+.main h1 {
     color: white;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    text-shadow:0.2rem 0.2rem 0.1rem rgb(189, 118, 184);
+}
+
+.table-container {
+    padding-top: 2.5rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.table {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    max-width: 80%;
+    font-size: 1.15rem;
+    border-collapse: collapse;
+    border: 2px solid rgb(29, 29, 29);
+    background-color: rgba(189, 118, 184, 0.25);
+    min-width: 70%;
+}
+
+.table td a, .table th a {
+    text-decoration: none;
+    color: white;
+}
+
+.table td, .table th{
+    text-align: center;
+      padding: 20px 40px;
+}
+
+.table tr {
+    white-space: nowrap;
+    border: 2px solid rgb(29, 29, 29);
 }
