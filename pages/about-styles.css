@@ -3,10 +3,14 @@
     padding: 0;
     font-family:'Rubik Mono One', sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 }
+html {
+    height: 100%;
+}
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    position: relative;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
@@ -14,6 +18,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -92,7 +98,6 @@ body {
     cursor: pointer;
 }
 
-
 .header {
     color: white;
     text-transform: uppercase;
@@ -161,6 +166,7 @@ body {
     width: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    min-height: 100%;
 }
 
 section {
@@ -173,8 +179,8 @@ section {
 
     &:nth-of-type(1) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.75), 
-        rgba(0, 0, 0, 0.75)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/crew1.png);
         background-size: cover;
         background-position: center;
@@ -183,8 +189,8 @@ section {
 
     &:nth-of-type(2) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/guitar-stage.jpeg);
         background-size: cover;
         background-position: center;
@@ -193,8 +199,8 @@ section {
 
     &:nth-of-type(3) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/mic-stage.jpeg);
         background-size: cover;
         background-position: center;
@@ -203,8 +209,8 @@ section {
 
     &:nth-of-type(4) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/lights-stage.jpeg);
         background-size: cover;
         background-position: center;
@@ -213,8 +219,8 @@ section {
 
     &:nth-of-type(5) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/crowd-stage.jpeg);
         background-size: cover;
         background-position: center;
@@ -223,11 +229,67 @@ section {
 
     &:nth-of-type(6) {
         background-image: linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
       ), url(../img/drums-stage.jpeg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
+}
+
+#footer {
+    margin-top: auto;
+    padding: 0.2rem;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    line-height: 175%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    list-style: none;
+    font-size: 1rem;
+    line-height: 200%;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem;
+}
+
+#footer ul li a::after {
+    content: "  ]";
+    position: absolute;
+    opacity: 0;
+    left: 100%;
+    transition: 0.2s ease;
+}
+
+#footer ul li a::before {
+    content: "[  ";
+    position: absolute;
+    opacity: 0;
+    right: 100%;
+    transition: 0.2s ease;
+}
+
+#footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(189, 118, 184);
+    text-transform: uppercase;
+}
+
+#footer ul li a:hover::before,
+#footer ul li a:hover::after {
+    opacity: 1;
 }
