@@ -3,14 +3,10 @@
     padding: 0;
     font-family:'Rubik Mono One', sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 }
-html {
-    height: 100%;
-}
 
 body {
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 100vh;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
@@ -18,8 +14,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
 }
 
 .navbar {
@@ -29,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: 5vh;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -90,8 +84,8 @@ body {
 }
 
 .navbar ul li img {
-    max-height: 15rem;
-    max-width: 15rem;
+    max-height: 10rem;
+    max-width: 10rem;
     }
 
 .logo {
@@ -162,11 +156,10 @@ body {
 }
 
 .main {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    min-height: 100%;
 }
 
 section {
@@ -239,15 +232,15 @@ section {
 }
 
 #footer {
-    margin-top: auto;
-    padding: 0.2rem;
-    width: 100%;
     letter-spacing: 1px;
-    font-size: 0.75rem;
-    line-height: 175%;
+    bottom: 0;
+    width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
+    font-size: 0.75rem;
+    line-height: 175%;
+    padding: 0.2rem;
     text-transform: uppercase;
 }
 

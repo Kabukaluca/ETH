@@ -83,3 +83,32 @@ body {
 .logo {
     cursor: pointer;
 }
+
+#footer {
+    position: fixed;
+    letter-spacing: 1px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 175%;
+    padding: 0.2rem;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    list-style: none;
+    font-size: 1rem;
+    line-height: 200%;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem;
+}
