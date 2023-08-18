@@ -75,9 +75,9 @@ body {
     opacity: 1;
 }
 
-.navbar ul li img {
-    max-height: 15rem;
-    max-width: 15rem;
+.navbar ul img {
+    max-height: 10rem;
+    max-width: 10rem;
     }
 
 .logo {
