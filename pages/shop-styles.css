@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Navbar */
 .navbar {
     width: 85%;
     margin: auto;
@@ -84,6 +85,10 @@ body {
     cursor: pointer;
 }
 
+/* Content */
+
+
+/* Footer */
 #footer {
     position: fixed;
     letter-spacing: 1px;

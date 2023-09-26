@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Navbar */
 .navbar {
     width: 85%;
     margin: auto;
@@ -30,7 +31,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .navbar ul li {
     list-style: none;
     display: inline-block;
@@ -39,7 +39,6 @@ body {
     color: white;
     position: relative;
 }
-
 .navbar > ul > li > a {
     text-decoration: none;
     color: white;
@@ -47,7 +46,6 @@ body {
     font-size: 26px;
     position: relative;
 }
-
 .navbar ul li a::after {
     content: "  ]";
     position: absolute;
@@ -55,7 +53,6 @@ body {
     left: 100%;
     transition: 0.2s ease;
 }
-
 .navbar ul li a::before {
     content: "[  ";
     position: absolute;
@@ -63,27 +60,24 @@ body {
     right: 100%;
     transition: 0.2s ease;
 }
-
 .navbar ul li a:hover {
     text-decoration: none;
     color: rgb(189, 118, 184);
     text-transform: uppercase;
 }
-
 .navbar ul li a:hover::before,
 .navbar ul li a:hover::after {
     opacity: 1;
 }
-
 .navbar ul img {
     max-height: 10rem;
     max-width: 10rem;
     }
-
 .logo {
     cursor: pointer;
 }
 
+/* Content */
 .main h1 {
     color: white;
     display: flex;
@@ -131,6 +125,7 @@ body {
     border: 2px solid rgb(29, 29, 29);
 }
 
+/* Footer */
 #footer {
     position: fixed;
     letter-spacing: 1px;
@@ -143,7 +138,6 @@ body {
     line-height: 175%;
     padding: 0.2rem;
 }
-
 #footer ul {
     display: flex;
     flex-direction: row;
@@ -153,7 +147,6 @@ body {
     font-size: 1rem;
     line-height: 200%;
 }
-
 #footer ul li a {
     text-decoration: none;
     color: white;
