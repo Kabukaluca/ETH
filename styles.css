@@ -119,7 +119,34 @@ body {
 #footer ul li a {
     text-decoration: none;
     color: white;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+}
+
+/* Footer Hover */
+
+#footer ul li a::after {
+    content: "]";
+    position: relative;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+#footer ul li a::before {
+    content: "[";
+    position:relative;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+#footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(189, 118, 184);
+    text-transform: uppercase;
+}
+
+#footer ul li a:hover::before,
+#footer ul li a:hover::after {
+    opacity: 1;
 }
 
 
